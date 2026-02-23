@@ -1,0 +1,31 @@
+[project]
+name = "pharminv"
+version = "0.4"
+description = "Python interface to harminv"
+readme = "README.md"
+requires-python = ">=3.12, <3.14"
+dependencies = [
+  "numpy>=2.0",
+]
+
+authors = [
+  { name = "Aaron O'Leary", email = "dev@aaren.me" }
+]
+
+license = { text = "GPLv3" }
+urls = { "homepage" = "https://github.com/aaren/pharminv" }
+
+[build-system]
+requires = [
+  "setuptools>=65.5.1",
+  "wheel",
+  "Cython>=0.29.33",
+  "numpy>=2.0"
+]
+build-backend = "setuptools.build_meta"
+
+[dependency-groups]
+dev = [
+    "matplotlib>=3.10.8",
+    "pandas>=3.0.1",
+]
